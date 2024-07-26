@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useLayoutEffect, useState } from "react";
 import Logo from "../assets/greatifyLogo.png";
-import SmallLogo from "../assets/logo.png";
+import SmallLogo from "../assets/logo3.png";
 import amityLogo from "../assets/amityLogo.png";
 import {
   AcademicCapIcon,
@@ -72,9 +72,9 @@ export default function () {
           className="cursor-pointer absolute top-10 right-0 bg-[#F9F7E8] rounded-full h-6 w-6 flex items-center justify-center"
         >
           {!toggleSidebar ? (
-            <ChevronLeftIcon className="absolute right-[3px] w-4 h-4 text-[#00373A] bg-[#00DC46] rounded-full" />
+            <ChevronLeftIcon className="absolute right-[3px] w-4 h-4 text-[#00373A] bg-[#F79115] rounded-full" />
           ) : (
-            <ChevronRightIcon className="absolute right-[3px] w-4 h-4 text-[#00373A] bg-[#00DC46] rounded-full" />
+            <ChevronRightIcon className="absolute right-[3px] w-4 h-4 text-[#00373A] bg-[#F79115] rounded-full" />
           )}
         </div>
 
@@ -112,7 +112,7 @@ export default function () {
                       data-tooltip-content={item?.name}
                       className={`h-6 w-6 mr-2 inline-block ${
                         item?.current
-                          ? "text-[#00DC46]"
+                          ? "text-[#F79115]"
                           : " hover:text-white text-gray-300 outline-none border-none"
                       } `}
                     />
@@ -122,7 +122,7 @@ export default function () {
                       id={item?.name}
                       place="right"
                       style={{
-                        backgroundColor: "#005C23",
+                        backgroundColor: "#F79115",
                         fontWeight: "500",
                         color: "#ffffff",
                         fontSize: "14px",
@@ -133,7 +133,7 @@ export default function () {
                   {!toggleSidebar && item?.name}
                 </a>
                 {!toggleSidebar && item?.current && (
-                  <div className="h-10 w-[10px] bg-[#00DC46] rounded-s-md "></div>
+                  <div className="h-10 w-[10px] bg-[#F79115] rounded-s-md "></div>
                 )}
               </div>
             ))}
@@ -142,8 +142,8 @@ export default function () {
 
         {!toggleSidebar && (
           <div className=" overflow-hidden h-[150px] rounded-lg w-full">
-            <div className="translate-y-6 -translate-x-8">
-              <img src={SmallLogo} className="h-[240px] w-60 " />
+            <div className="translate-y-4">
+              <img src={SmallLogo} className="h-full w-full " />
             </div>
           </div>
         )}

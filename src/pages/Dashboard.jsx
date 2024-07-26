@@ -425,7 +425,7 @@ function Dashboard() {
             <div className="p-4 border-b border-gray-200 flex items-start justify-between gap-4">
               <div className="flex flex-col">
                 <h6 className="font-semibold text-lg ">Semester results</h6>
-                <p className="font-semibold text-sm text-gray-400">
+                <p className="font-medium text-sm text-gray-400">
                   Semester results per year
                 </p>
               </div>
